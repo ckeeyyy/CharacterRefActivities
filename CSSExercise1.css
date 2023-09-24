@@ -1,0 +1,19 @@
+.main-heading {
+    padding: 10px;
+    background-color: green;
+    color: white;
+}
+
+strong {color: blue;}
+
+img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.subheadline {color: red;}
+
+.link {
+    color: green;
+    text-decoration: underline;
+}

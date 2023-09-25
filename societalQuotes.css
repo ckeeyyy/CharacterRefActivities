@@ -1,0 +1,15 @@
+h1, h2 {
+    font-variant: small-caps;
+    text-align: center;
+}
+
+p {
+    border: 3px dashed red;
+    margin: 20px 75px 15px 75px; 
+}
+
+.strike-through { text-decoration: line-through; }
+
+.gray-background { background-color: gray; }
+
+.bold { font-weight: bold; }

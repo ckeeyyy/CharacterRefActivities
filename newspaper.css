@@ -1,0 +1,15 @@
+body { background-color: cyan; }
+
+h1 {color: blue;}
+
+h2 { text-align: center; }
+
+div {line-height: 5px;}
+
+.silver { color: hsl(0, 0%, 75%); }
+
+.fuchsia { color:#ff00ff; }
+
+.brightOrange { color: rgb(255,165,0); }
+
+.subscription, .rates { text-decoration: underline; }

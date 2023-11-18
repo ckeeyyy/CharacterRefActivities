@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Camila Kim B. Supremo">
+    <meta name="description" content="Mini Forms">
+    <meta name="keywords" content="Form">
+    <title>Student Information Form</title>
+    <link rel="stylesheet" href="MiniForms.css">   
+</head>
+
+<body>
+
+         <form id="miniForm">
+            <h1 style="color: #ffffff;">Student Information Form</h1>
+            <label for="fname" style="color: #EB4511;">First name:</label><br>
+            <input type="text" class="input-field" id="fname" name="fname" required><br>
+            <label for="lname" style="color: #EB4511;">Last name:</label><br>
+            <input type="text"  class="input-field" id="lname" name="lname" required><br>
+            <label for="studentID" style="color: #EB4511;">ID Number:</label><br>
+            <input type="text" class="input-field"  id="studentID" name="studentID" required><br>
+            <label for="age" style="color: #EB4511;">Age:</label><br>
+            <input type="text" class="input-field" id="age" name="age" required><br>
+            <label for="gender" style="color: #EB4511;">Gender:</label><br>
+            <input type="text"  class="input-field" id="gender" name="gender" required><br>
+            <label for="email" style="color: #EB4511;">Email Address:</label><br>
+            <input type="text"  class="input-field" id="email" name="email" required><br>
+            <label for="cpnumber" style="color: #EB4511;">Contact #:</label><br>
+            <input type="text" class="input-field"  id="cpnumber" name="cpnumber" required>
+            <br>
+            <div class="btn">
+            <button type="button" onclick="displayForm()">Submit</button>
+        </div>
+
+        </form>
+
+        <script>
+            function displayForm() {
+                var fname = document.getElementById("fname").value;
+                var lname = document.getElementById("lname").value;
+                var studentID = document.getElementById("studentID").value;
+                var age = document.getElementById("age").value;
+                var gender = document.getElementById("gender").value;
+                var email = document.getElementById("email").value;
+                var cpnumber = document.getElementById("cpnumber").value;
+    
+                console.log("Student Information");
+                console.log("First Name: " + fname);
+                console.log("Last Name: " + lname);
+                console.log("ID Number: " + studentID);
+                console.log("Age: " + age);
+                console.log("Gender: " + gender);
+                console.log("Email Address: " + email);
+                console.log("Contact #: " + cpnumber);
+            }
+        </script>
+   
+    
+</body>
+</html>

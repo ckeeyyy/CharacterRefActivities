@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Camila Kim Supremo">
+    <meta name="description" content="My Porfolio">
+    <meta name="keywords" content="portfolio">
+    <link rel="stylesheet" href="finalExamSupremo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Portfolio</title>
+</head>
+<body>
+
+        <!-- For the portfolio -->
+    <div class="portfolio-container">
+        <div class="myPort">
+          <img src="dp.jpg" class="myImage">
+          <div class="myBio">
+            <h1>Camila Kim Supremo</h1>
+            <h3>College Student</h3>
+            <p class="myInfo">I'm a Bachelor of Science in Computer Engineering Student. I'm passionate in solving problems. I have joined competetions that helps me enhance my skills.</p>
+            <div class="contact-details">
+              <span class="contact-platform">Email:</span>
+              camilakim.supremo@hcdc.edu.ph
+              <span class="contact-platform"> Instagram:</span> @ckeeyyy
+            </div>
+          </div>
+        </div>
+
+        <div class="aAndGoals">
+          <img src="cpe.png" class="drawing">
+          <div class="aName">
+            <h2 class="aTitle">Aspirations and Goals</h2>
+            <p class="aDescription"> My professional aspirations revolve around continuous development and the improvement of my skills. I am dedicated to expanding my knowledge in various areas where I believe I am lacking. I consistently challenge myself to attempt things I fear in an effort to build up myself. I strive to become an even greater version of myself because I am fully aware of my potential. I also seek to determine my further potential within the industry.</p>
+          </div>
+        </div>
+
+        <!-- Image slider for the Achievements -->
+    <div class="slider">
+        <div class="controls">
+          <div class="up">
+            <i class="fa-solid fa-chevron-up"></i>
+          </div>
+          <div class="down">
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+        </div>
+  
+        <div class="wrapper">
+          <div class="left">
+            <div>
+              <h2>K-12 STEM</h2>
+              <p>
+                I graduated with honors from Davao Doctors College Inc., 
+                taking the Science, Technology, Engineering, and Mathematics (STEM)  strand. 
+              </p>
+            </div>
+  
+            <div>
+              <h2>CETSO Secretary</h2>
+              <p>
+                Awarded a certificate of recognition as the Secretary of the College of Engineering and Technology Student Organization for the S.Y. 2022-2023
+              </p>
+            </div>
+  
+            <div>
+              <h2>CET Day</h2>
+              <p>
+                I joined the singing competition during the CET Day. 
+                I included this in my achievements because it was my first time in front of many people. 
+                This event helped me to prepare for my regional pitching competition. 
+              </p>
+            </div>
+  
+            <div>
+              <h2>Third Placer</h2>
+              <p>
+                This is the first competition I joined at ICPEP Region 11, which is held in UM Digos, the pitching competition. 
+                We were able to place despite being a first-timer in the competition. 
+              </p>
+            </div>
+  
+            <div>
+              <h2>Second Placer</h2>
+              <p>
+                Recently, I joined the Logic Breadboarding Competition held at LPU Davao. 
+                My team and I secured a spot and placed second in the competition against 7 schools in Region 11.
+              </p>
+            </div>
+          </div>
+          <div class="right">
+            <div>
+              <img src="icpep.jpeg"/>
+            </div>
+  
+            <div>
+              <img src="pitching.jpg"/>
+            </div>
+  
+            <div>
+              <img src="cet.jpg"/>
+            </div>
+  
+            <div>
+              <img src="officer.JPG"/>
+            </div>
+  
+            <div>
+              <img src="ddc.jpg"/>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <script>
+              let slider = document.querySelector(".slider");
+              let currentSlide = 0;
+              let totalSlides = slider.querySelectorAll(".wrapper .left > div").length - 1;
+
+              slider.querySelector(".controls .up").addEventListener("click", function () {
+                if (currentSlide == 0) {
+                  return;
+                }
+                currentSlide--;
+                slider.querySelector(".wrapper .left div").style.marginTop = `${
+                  currentSlide * -100
+                }vh`;
+                slider.querySelector(".wrapper .right div").style.marginTop = `${
+                  (totalSlides - currentSlide) * -100
+                }vh`;
+              });
+
+              slider.querySelector(".controls .down").addEventListener("click", function () {
+                if (currentSlide == totalSlides) {
+                  return;
+                }
+                currentSlide++;
+                slider.querySelector(".wrapper .left div").style.marginTop = `${
+                  currentSlide * -100
+                }vh`;
+                slider.querySelector(".wrapper .right div").style.marginTop = `${
+                  (totalSlides - currentSlide) * -100
+                }vh`;
+              });
+      </script>
+</body>
+</html>
